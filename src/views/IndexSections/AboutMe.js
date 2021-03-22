@@ -17,7 +17,7 @@ class AboutMe extends React.Component {
               <div className="col px-0">
                 <Row className="align-items-center justify-content-center">
                   <Col className="text-center" lg="9">
-                    <h1 className="display-2 mb-0 mt-3">About Me</h1>
+                    <h1 className="text-success display-2 mb-0 mt-3">About Me</h1>
                     <Row>
                       <Col>
                         <h3
