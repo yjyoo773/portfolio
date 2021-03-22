@@ -74,13 +74,13 @@ class AboutMe extends React.Component {
                         </p>
                         <h5
                           className="lead font-weight bold my-0"
-                          style={{ textAlign: "right" }}
+                          style={{ textAlign: "left" }}
                         >
                           Frameworks
                         </h5>
                         <p
                           className="text-muted my-0"
-                          style={{ textAlign: "right", fontSize: "0.9rem" }}
+                          style={{ textAlign: "left", fontSize: "0.9rem" }}
                         >
                           Bootstrap, Reactstrap
                         </p>

@@ -64,8 +64,9 @@ class Projects extends React.Component {
                               active: this.state.iconTabs === 1,
                             })}
                             onClick={(e) => this.toggleNavs(e, "iconTabs", 1)}
-                            href="#pablo"
+                            href="#"
                             role="tab"
+                            // style={{color: "#2dce89",  backgroundColor: "#fff"}}
                           >
                             Baseball Number Game
                           </NavLink>
@@ -77,7 +78,7 @@ class Projects extends React.Component {
                               active: this.state.iconTabs === 2,
                             })}
                             onClick={(e) => this.toggleNavs(e, "iconTabs", 2)}
-                            href="#pablo"
+                            href="#"
                             role="tab"
                           >
                             Spotify Recommendation System
@@ -90,7 +91,7 @@ class Projects extends React.Component {
                               active: this.state.iconTabs === 3,
                             })}
                             onClick={(e) => this.toggleNavs(e, "iconTabs", 3)}
-                            href="#pablo"
+                            href="#"
                             role="tab"
                           >
                             Project 301
@@ -165,7 +166,7 @@ class Projects extends React.Component {
                             <Button
                               className="btn-icon-only rounded-circle ml-1"
                               color="github"
-                              ref="https://github.com/yjyoo773/spotify_rec"
+                              href="https://github.com/yjyoo773/spotify_rec"
                               target="_blank"
                             >
                               <span className="btn-inner--icon">
