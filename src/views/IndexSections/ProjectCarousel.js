@@ -106,6 +106,7 @@ class Projects extends React.Component {
                           <TabPane tabId="iconTabs1">
                             <img
                               src={require("assets/img/baseball_game.jpeg")}
+                              alt="baseball game"
                             />
                             <p
                               className="description"
@@ -129,7 +130,8 @@ class Projects extends React.Component {
                             </Button>
                           </TabPane>
                           <TabPane tabId="iconTabs2">
-                            <img src={require("assets/img/spotify_rec.png")} />
+                            <img src={require("assets/img/spotify_rec.png")} 
+                            alt="spotify rec system"/>
                             <p
                               className="description"
                               style={{ textAlign: "left" }}
