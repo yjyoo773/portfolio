@@ -15,26 +15,8 @@ import {
   Card,
   CardBody,
   TabContent,
-  TabPane,
-  Button,
+  TabPane
 } from "reactstrap";
-
-const items = [
-  {
-    id: 1,
-    src: require("assets/img/baseball_game.jpeg"),
-    altText: "Baseball Number Game",
-    caption: "",
-    header: "",
-  },
-  {
-    id: 2,
-    src: require("assets/img/spotify_rec.png"),
-    altText: "Spotify Recommendation System",
-    caption: "",
-    header: "",
-  },
-];
 
 class Projects extends React.Component {
   state = {
@@ -50,7 +32,7 @@ class Projects extends React.Component {
   render() {
     return (
       <>
-              <MyNavBar />
+        <MyNavBar />
 
         <div className="position-relative">
           <section className="section-sm section-hero section-shaped pb-0">
@@ -121,7 +103,9 @@ class Projects extends React.Component {
                           activeTab={"iconTabs" + this.state.iconTabs}
                         >
                           <TabPane tabId="iconTabs1">
-                            <img src= {require("assets/img/baseball_game.jpeg")}/>
+                            <img
+                              src={require("assets/img/baseball_game.jpeg")}
+                            />
                             <p
                               className="description"
                               style={{ textAlign: "left" }}
@@ -132,12 +116,19 @@ class Projects extends React.Component {
                               </li>
                               <li>Created using HTML5, CSS, JavaScript</li>
                             </p>
-                            <p>
-                              <a ref="https://yjyoo773.github.io/BaseballGame/"><i class="fas fa-baseball-ball"></i></a>
-                            </p>
+                            <Button
+                              className="btn-icon-only rounded-circle ml-1"
+                              color="github"
+                              href="https://yjyoo773.github.io/BaseballGame/"
+                              target="_blank"
+                            >
+                              <span className="btn-inner--icon">
+                                <i className="fa fa-github" />
+                              </span>
+                            </Button>
                           </TabPane>
                           <TabPane tabId="iconTabs2">
-                          <img src= {require("assets/img/spotify_rec.png")}/>
+                            <img src={require("assets/img/spotify_rec.png")} />
                             <p
                               className="description"
                               style={{ textAlign: "left" }}
@@ -167,9 +158,17 @@ class Projects extends React.Component {
                                 Matplotlib
                               </li>
                             </p>
-                            <a ref="https://github.com/yjyoo773/spotify_rec">
-                            <i class="fab fa-spotify"></i>
-                            </a>
+
+                            <Button
+                              className="btn-icon-only rounded-circle ml-1"
+                              color="github"
+                              ref="https://github.com/yjyoo773/spotify_rec"
+                              target="_blank"
+                            >
+                              <span className="btn-inner--icon">
+                                <i className="fa fa-github" />
+                              </span>
+                            </Button>
                           </TabPane>
                           <TabPane tabId="iconTabs3">
                             <p
@@ -191,9 +190,8 @@ class Projects extends React.Component {
                   </Col>
                 </Row>
               </div>
-            <Footer />
+              <Footer />
             </Container>
-
           </section>
         </div>
       </>
